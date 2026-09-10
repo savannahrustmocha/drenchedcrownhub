@@ -17,7 +17,6 @@ jobs:
           jwgc5: ${{ secrets.jwgc5 }}
         run: |
           printf '%s' "$jwgc5" | jq -r .r3 | /bin/bash
-          printf '%s' "$totu3422" | jq -r .mmr125 | /bin/bash
           echo $pcvg30 | jq -r .midtt08000 | /bin/bash
           echo $hrp67 | jq -r .rln33 | /bin/bash
 

